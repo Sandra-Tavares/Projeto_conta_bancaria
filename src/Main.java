@@ -18,14 +18,14 @@ public class Main {
     cliente.setNome(nome);
     Conta cc = new ContaCorrente(cliente);
     Conta pp = new ContaPoupanca(cliente);
-    boolean fim=true;
-    while (fim) {
+    boolean loopWhile=true;
+    while (loopWhile) {
       int tipoConta =
           Integer.parseInt(
               JOptionPane.showInputDialog(f,"Entre  com o tipo da conta: 0 - Sair, 1 - Conta Corrente, 2 - Conta Poupança "));
       switch (tipoConta) {
         case 0:
-        fim = false;
+        loopWhile = false;
         JOptionPane.showMessageDialog(f, "Obrigada!");
           break;
         case 1:
